@@ -2,7 +2,6 @@
 
 "DivGI: Delve into Digestive Endoscopy Image Classification"
 
-code will be released soon before 1 April 2025
 
 ## updated in 18 Feb. 2025
 The training code is released with detail settings in `launch.json`.

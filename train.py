@@ -20,7 +20,7 @@ BATCH_SIZE = 128
 EPOCHS = 100
 LR = 1e-3
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-DATA_PATH = "/teamspace/studios/this_studio/dataset"
+DATA_PATH = "./dataset"
 
 DO_MULTIGRANULARITIES = True
 N_STEP = 4
@@ -201,7 +201,7 @@ for epoch in range(EPOCHS):
     # Save best model
     if val_acc > best_acc:
         best_acc = val_acc
-        torch.save(model.state_dict(), "best_divgl_1.pth")
+        torch.save(model.state_dict(), "best_divgl.pth")
         print("✅ Saved new best model")
 
 print("Training finished. Best Val Acc = {:.2f}%".format(best_acc * 100))
